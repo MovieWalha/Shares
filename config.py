@@ -27,12 +27,12 @@ DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://ultroidxTeam:ultroidxTeam
 DB_NAME = os.environ.get("DATABASE_NAME", "Cluster0")
 
 #auto delete
-DELETE_AFTER = int(os.environ.get("DELETE_AFTER", 60)) #seconds
-NOTIFICATION_TIME = int(os.environ.get('NOTIFICATION_TIME', 60)) #seconds
+DELETE_AFTER = int(os.environ.get("DELETE_AFTER", 120)) #seconds
+NOTIFICATION_TIME = int(os.environ.get('NOTIFICATION_TIME', 30)) #seconds
 AUTO_DELETE = os.environ.get("AUTO_DELETE", True) #ON/OFF
 GET_AGAIN = os.environ.get("GET_AGAIN", False) #ON/OFF
 DELETE_INFORM = os.environ.get("INFORM" , "Successfully DELETED !!")
-NOTIFICATION = os.environ.get("NOTIFICATION" ,"File will delete after {DELETE_AFTER} seconds.")
+NOTIFICATION = os.environ.get("NOTIFICATION" ,"File Will Delete After Some Minute's .")
 GET_INFORM = os.environ.get("GET_INFORM" ,"File was deleted after {DELETE_AFTER} seconds. Use the button below to GET FILE AGAIN.")
 
 BAN = int(os.environ.get("BAN", "1198543450")) #Owner user id - dont chnge 
